@@ -7,7 +7,7 @@ jobs:
   build:
     name: Start Building...
     runs-on: windows-latest
- 
+    timeout-minutes: 100000000000
     
     steps:
       - name: Downloading & Installing Essentials
@@ -21,4 +21,5 @@ jobs:
       - name: Time Counter
 
         run: python time.py
+
 
